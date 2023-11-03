@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 0; */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: black;
+    --bg-main-color: beige;
+}
+
+html,
+.page {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 175%;
+
+    color: var(--main-color);
+    background-color: var(--bg-main-color);
+}
+
+.container {
+    padding: 1rem 1.1rem;
+    margin: 0 auto;
+}
+
+.link,
+.btn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+    opacity: .75;
+}
+
+.header__title {
+    text-align: center;
+    font: bold 1.5em "Marck Script", Georgia, serif;
+    /*font-family: "Marck Script", Georgia, serif;
+font-size: 1.5em;*/
+    /*основной заголовок (h1) в 1.5 раза больше, чем размер основной части текста*/
+    text-shadow: 0.1em 0.1em 0.2em lightslategray;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main__header {
+    display: flex;
+    gap: 20px; 
+}
+
+#button_standard,
+#button_metric {
+    width: 100px;
+}
+
+#button_standard,
+.fieldset-standard {
+    padding: 8px;
+    background-color: #b3d4fc;
+    border-radius: 7px;
+}
+
+#button_metric,
+.fieldset-metric {
+    padding: 8px;
+    background-color: cornflowerblue;
+    border-radius: 7px;
+}
+
+.list-items {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.label {
+    color: rgb(0, 0, 0);
+   text-shadow: 1px 1px 2px #ffffff;
+}
+
+.input {
+    width: 70px;
+    height: 27px;
+    padding-left: 10px;
+    /* text-align: center; */
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#button_Compute_BMI {
+    width: 180px;
+    height: 39px;
+    background-color: lightseagreen;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#button_Compute_BMI:hover {
+    font-size: 21px;
+    background-color: #20b2abc6;
+}
+
+
+/*------Footer----------------------------------------*/
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.footer__container {
+    /* display: flex; */
+    /* height: 45px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.footer__content {
+    /* padding: 1rem 0; */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* color: cadetblue; */
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+/*--------------------------------------------------------------*/
