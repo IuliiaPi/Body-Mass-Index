@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Body mass index">
+    <meta name="keywords" content="BMI, Body mass index, Iuliia Pidlisna">
+    <meta name="author" content="Iuliia Pidlisna">
+
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <script defer='defer' src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title> BMI </title>
+</head>
+
+<body class="page">
+
+    <!--Header-->
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__content">
+                <h1 class="header__title"> Body mass index </h1>
+            </div>
+        </div>
+    </header>
+
+    <!--Main Area-->
+    <main class="main">
+        <div class="main__container container">
+            <div class="main__content">
+
+                <header class="main__header">
+                    <button id="button_standard" class="btn" onclick="show('standard')"> STANDARD</button>
+                    <button id="button_metric" class="btn" onclick="show('metric')"> METRIC</button>
+                </header>
+
+                <section class="standard">
+                    <fieldset class="fieldset-standard">
+                        <ul class="list-items">
+                            <li class="item">
+                                <p class="label">Your Height :</p>
+                                <label class="label" for="form-height_s_feet"> </label>
+                                <input class="input" name="form-height_s_feet" maxlength="2" id="form-height_s_feet"
+                                    value="5"> <span>
+                                    feet
+                                </span>
+
+                                <label class="label" for="form-height_s_inch"> </label>
+                                <input class="input" name="form-height_s_inch" maxlength="2" id="form-height_s_inch"
+                                    value="7"> <span>
+                                    inches
+                                </span>
+                            </li>
+
+                            <li class="item">
+                                <label class="label" for="form-weight_s"> Your Weight : </label>
+
+                                <input class="input" name="form-weight_s" maxlength="3" id="form-weight_s" value="120">
+                                <span> pounds
+                                </span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </section>
+
+                <section class="metric">
+                    <fieldset class="fieldset-metric">
+                        <ul class="list-items">
+                            <li class="item">
+                                <label class="label" for="form-height_m"> Your Height : </label>
+                                <input class="input" name="form-height_m" maxlength="3" id="form-height_m" value="171">
+                                <span> cm
+                                </span>
+                            </li>
+
+                            <li class="item">
+                                <label class="label" for="form-weight_m"> Your Weight : </label>
+                                <input class="input" name="form-weight_m" maxlength="3" id="form-weight_m" value="52">
+                                <span> kg
+                                </span>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </section>
+
+                <button id="button_Compute_BMI" class="btn" onclick="calculate()"> Compute BMI</button>
+
+                <section class="section-your-bmi">
+                    <label for="form-BMI"> Your BMI : </label>
+                    <input class="input" name="form-BMI" id="form-BMI" value=" ">
+                </section>
+
+
+                <div id="message"></div>
+
+                <!-- <div class="standard">
+    <label for="form-weight_s_n"> Your normal weight : </label>
+    <input name="form-weight_s_n" id="form-weight_s_n" value=" "> pounds
+</div>
+
+<div class="metric">
+    <label for="form-weight_m_n"> Your normal weight : </label>
+    <input name="form-weight_m_n" id="form-weight_m_n" value=" "> kg
+</div> -->
+
+
+                <section class="section-description">
+                    <strong> BMI Categories: </strong> <br>
+                    Underweight =< 18.5 <br>
+                        Normal weight = 18.5-24.9 <br>
+                        Overweight = 25-29.9 <br>
+                        Obesity = BMI of 30 or greater
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+
+                <div class="my-github">
+                    <a class="link my-github__link" href="https://github.com/IuliiaPi" target="_blank">
+                        <img class="my-github__img" src="./assets/svg/github.png" alt="github IuliiaPi" width="20"
+                            height="20"></a>
+                </div>
+
+                <div class="copyright">&copy; 2022 SunFlower. All Rights Reserved </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<!--
+
+<li>
+    <label for="form-age"> Age : </label>
+    <input name="age" id="form-age">
+</li>
+<br>
+
+<p> Age :
+    <select name="age">
+        <option>kid</option>
+        <option>adult (>20) </option>
+        <option value="b">bisexual</option>   <!--form otpravit b na servis-->
